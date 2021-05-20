@@ -1,0 +1,60 @@
+@mixin prefix ($property, $value, $moz: true, $webkit: true, $o: false, $ms: true, $spec: true) {
+    @if $moz {
+        -moz-#{$property}: $value;
+    }
+    @if $webkit {
+        -webkit-#{$property}: $value;
+    }
+    @if $o {
+        -o-#{$property}: $value;
+    }
+    @if $ms {
+        -ms-#{$property}: $value;
+    }
+    @if $spec {
+        #{$property}: $value;
+    }
+}
+
+@keyframes bar-fill {
+    0% {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes bar-fill {
+    0% {
+        width: 0;
+    }
+}
+
+@-moz-keyframes bar-fill {
+    0% {
+        width: 0;
+    }
+}
+
+@-o-keyframes bar-fill {
+    0% {
+        width: 0;
+    }
+}
+
+.bar-graph {
+    display: block;
+    text-align: left;
+    list-style: none;
+    margin: 24px 0px auto;
+    padding-left: 6px;
+    .bar-graph__bar-wrap {
+        @include prefix(border-radius, 10px 10px 10px 10px);
+        margin: 3px 0 10px 0;
+        .bar-graph__bar-wrap__bar-fill {
+            @include prefix(border-radius, 10px 10px 10px 10px);
+            @include prefix(animation, bar-fill 1s);
+            display: block;
+            height: 8px;
+            width: 0px;
+        }
+    }
+}

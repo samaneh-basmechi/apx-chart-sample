@@ -1,0 +1,19 @@
+@import '../mixin/screen';
+%grid-same-prop {
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-cell {
+    border-radius: 6px;
+}
+
+.grid {
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    @extend %grid-same-prop;
+    @include for-tablet-landscape-down {
+        grid-template-columns: repeat( auto-fit, minmax(100%, 1fr));
+    }
+}

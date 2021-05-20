@@ -1,0 +1,12 @@
+<ul class="bar-graph">
+    <li>
+        <span class="font-weight-bold">
+            <span class="text-gray">
+                {{RateSatus[percentageRate.starNumber]}}: 
+            </span> &nbsp; {{percentageRate.vote}} Vote ({{percentageRate.percent}})
+        </span>
+        <div class="bar-graph__bar-wrap" [style.background-color]="progressColors[RateSatus[percentageRate.starNumber]].bgColor" [style.border-color]="progressColors[RateSatus[percentageRate.starNumber]].borderColor">
+            <span class="bar-graph__bar-wrap__bar-fill" [style.background-color]="progressColors[RateSatus[percentageRate.starNumber]].progressColor" [style.width]="percentageRate.percent"></span>
+        </div>
+    </li>
+</ul>

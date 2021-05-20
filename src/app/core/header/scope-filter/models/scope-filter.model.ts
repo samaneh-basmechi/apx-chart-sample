@@ -1,0 +1,1 @@
+export type ScopeFilterModel = 'ALL' | 'TODAY' | 'LAST_7_DAYS' | 'LAST_30_DAYS' | '';

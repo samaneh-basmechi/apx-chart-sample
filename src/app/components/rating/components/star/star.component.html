@@ -1,0 +1,5 @@
+<div class="star">
+    <ng-container *ngFor="let item of [].constructor(5);let i=index">
+        <input type="checkbox" disabled [checked]="(starNumber | async) === i + 1" id="star{{i + 1}}" value="{{i + 1}}" /><label for="star{{i + 1}}"></label>
+    </ng-container>
+</div>

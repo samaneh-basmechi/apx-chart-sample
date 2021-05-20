@@ -1,0 +1,17 @@
+@import '/src/assets/scss/mixin/screen';
+.filter-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 10px;
+    direction: rtl;
+    >div:nth-last-child(1) {
+        justify-content: flex-start;
+        display: flex;
+    }
+    @include for-phone-only {
+        grid-template-rows: repeat( auto-fit, minmax(1fr, 1fr));
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}

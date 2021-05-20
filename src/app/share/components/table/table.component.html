@@ -1,0 +1,10 @@
+<h3 class="m-3 text-center">{{tableData.title}}</h3>
+
+<div class="table mb-3">
+    <div class="table__header">
+        <div class="table__header__cell" *ngFor="let item of tableData.items[0] | keyvalue" tbl-header="{{item.key}}">{{item.key}}</div>
+    </div>
+    <div class="table__body" *ngFor="let item of tableData.items">
+        <div class="table__body__cell" *ngFor="let keyvalue of item | keyvalue ">{{keyvalue.value}}</div>
+    </div>
+</div>

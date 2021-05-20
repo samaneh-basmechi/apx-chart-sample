@@ -1,0 +1,28 @@
+<ng-container *ngIf="isloadPage;else loadingPage">
+
+    <app-header></app-header>
+
+    <div class="container">
+
+        <app-rating></app-rating>
+
+        <div class="grid">
+            <div class="grid-cell card">
+                <app-job></app-job>
+            </div>
+            <div class="grid-cell card">
+                <app-service></app-service>
+            </div>
+        </div>
+
+        <app-line-charts></app-line-charts>
+
+        <app-pie-charts></app-pie-charts>
+
+    </div>
+
+</ng-container>
+
+<ng-template #loadingPage>
+    <app-page-loading></app-page-loading>
+</ng-template>

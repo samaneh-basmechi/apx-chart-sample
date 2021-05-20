@@ -1,0 +1,666 @@
+{
+    "data": {
+        "httpStatus": 201,
+        "response": {
+            "message": "Mock dashboard retrieved.",
+            "data": {
+                "analytics": {
+                    "job": {
+                        "description": "Jobs Description",
+                        "items": [{
+                                "description": "Total Jobs Description",
+                                "growth": -29,
+                                "title": "Total Jobs",
+                                "total": 59
+                            },
+                            {
+                                "avg": "1:32:19",
+                                "description": "Description",
+                                "growth": 61,
+                                "title": "Average Jobs Time"
+                            },
+                            {
+                                "avg": "2:23:40",
+                                "description": "Description",
+                                "growth": 28,
+                                "title": "Average Jobs Time En-Route"
+                            },
+                            {
+                                "avg": "1:39:41",
+                                "description": "Description",
+                                "growth": -83,
+                                "title": "Average Jobs Time On-Site"
+                            }
+                        ],
+                        "title": "Jobs"
+                    },
+                    "pieCharts": [{
+                            "chartType": "PIE",
+                            "description": "Services by type",
+                            "items": [{
+                                    "key": "Labour",
+                                    "value": 26.370000000000005
+                                },
+                                {
+                                    "key": "Product",
+                                    "value": 73.63
+                                }
+                            ],
+                            "title": "Services"
+                        },
+                        {
+                            "chartType": "PIE",
+                            "description": "Services Labour by type",
+                            "items": [{
+                                    "key": "POST_WARRANTY_SERVICE",
+                                    "value": 34
+                                },
+                                {
+                                    "key": "MOBILE_SERVICE",
+                                    "value": 19
+                                },
+                                {
+                                    "key": "WARRANTY_SERVICE",
+                                    "value": 47
+                                }
+                            ],
+                            "title": "Services Labour"
+                        },
+                        {
+                            "chartType": "PIE",
+                            "description": "Services Product by type",
+                            "items": [{
+                                    "key": "TYRE",
+                                    "value": 38.31
+                                },
+                                {
+                                    "key": "BATTERY",
+                                    "value": 61.69
+                                }
+                            ],
+                            "title": "Services Product"
+                        }
+                    ],
+                    "rating": {
+                        "avg": 1,
+                        "description": "Rating Description",
+                        "items": {
+                            "1": 10,
+                            "2": 2,
+                            "3": 1,
+                            "4": 2,
+                            "5": 13
+                        },
+                        "title": "Rating"
+                    },
+                    "service": {
+                        "description": "Services Description",
+                        "items": [{
+                                "description": "Total Services Description",
+                                "growth": 79,
+                                "title": "Total Services",
+                                "total": 53
+                            },
+                            {
+                                "description": "Total Labour Services Description",
+                                "growth": -40,
+                                "title": "Total Labour Services",
+                                "total": 60
+                            },
+                            {
+                                "description": "Description",
+                                "growth": 31,
+                                "title": "Average Services Time",
+                                "avg": "1:14:36"
+                            },
+                            {
+                                "description": "Total Product Services Description",
+                                "growth": 35,
+                                "title": "Total Product Services",
+                                "total": 25
+                            }
+                        ],
+                        "title": "Services"
+                    },
+                    "lineCharts": [
+                        [{
+                            "chartType": "LINE",
+                            "description": "Total jobs and Services",
+                            "items": [{
+                                    "key": "2021-04-10",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 24
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 34
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-11",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 23
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 31
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-12",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 24
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 28
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-13",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 1
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 10
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-14",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 19
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 21
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-15",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 1
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 8
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-16",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 11
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 21
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-17",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 3
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-18",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 15
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 24
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-19",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 23
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 32
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-20",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 15
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 16
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-21",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 4
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 14
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-22",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 15
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 18
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-23",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 25
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 35
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-24",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 6
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-25",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 7
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 10
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-26",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 17
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 22
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-27",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 5
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-28",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 17
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 26
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-29",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 8
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 17
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-04-30",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 11
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 16
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-01",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 13
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 14
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-02",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 14
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 17
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-03",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 9
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 11
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-04",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 3
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-05",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 9
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 15
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-06",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 14
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 16
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-07",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 16
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 19
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-08",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 2
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 11
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-09",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 27
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 32
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-10",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 24
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 25
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-11",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 25
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 33
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-12",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 12
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 18
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-13",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 21
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 24
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-14",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 22
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 32
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-15",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 14
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 17
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-16",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 5
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 11
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-17",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 27
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 33
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-18",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 19
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 28
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-19",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 10
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 15
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-20",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 27
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 29
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-21",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 30
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 36
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-22",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 4
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 9
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "2021-05-23",
+                                    "value": [{
+                                            "key": "jobs",
+                                            "value": 6
+                                        },
+                                        {
+                                            "key": "services",
+                                            "value": 8
+                                        }
+                                    ]
+                                }
+                            ],
+                            "title": "Jobs and Services"
+                        }]
+                    ]
+                }
+            }
+        }
+    }
+
+}

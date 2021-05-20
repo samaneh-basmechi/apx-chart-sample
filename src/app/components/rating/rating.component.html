@@ -1,0 +1,11 @@
+<div *ngIf="rating" class="rating-grid card">
+    <div class="rating-grid__avg-rate">
+        <h2 class="font-weight-bold">
+            <span class="font-size-24 font-weight-bold">{{rating.avg}}</span> of 5
+        </h2>
+        <app-star></app-star>
+    </div>
+    <div class="rating-grid__progress">
+        <app-progress *ngFor="let item of rating.items" [percentageRate]="item"></app-progress>
+    </div>
+</div>

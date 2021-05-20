@@ -1,0 +1,22 @@
+@import "assets/scss/styles.scss";
+body {
+    font-family: $font-family;
+    font-size: $font-size;
+    background-color: $body-bg-color;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    background-color: #017edc0d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #008ffb;
+    width: 6px;
+    height: 6px;
+}

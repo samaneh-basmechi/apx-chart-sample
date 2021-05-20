@@ -1,0 +1,49 @@
+@import '/src/assets/scss/mixin/screen';
+.table {
+    min-width: 300px;
+    width: 100%;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    background: #017edc;
+    font-weight: bold;
+    color: #fff;
+    border-radius: .4em;
+    overflow: hidden;
+    .table__header,
+    .table__body {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-color: lighten(#017edc, 10%);
+    }
+    .table__header__cell {
+        display: none;
+    }
+    .table__body__cell {
+        display: block;
+        &:first-child {
+            padding-top: .5em;
+        }
+        &:last-child {
+            padding-bottom: .5em;
+        }
+    }
+    .table__header__cell,
+    .table__body__cell:before {
+        color: #feb019;
+    }
+    .table__header__cell,
+    .table__body__cell {
+        display: table-cell;
+        padding: .25em .5em;
+        padding: 1em !important;
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}

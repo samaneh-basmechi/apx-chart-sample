@@ -1,0 +1,5 @@
+<div class="grid">
+    <div class="grid-cell card" id="chart" *ngFor="let chart of charts">
+        <apx-chart [dataLabels]="chart.dataLabels" [legend]="chart.legend" [series]="chart.series" [chart]="chart.chart" [labels]="chart.labels" [title]="chart.title" [responsive]="chart.responsive"></apx-chart>
+    </div>
+</div>

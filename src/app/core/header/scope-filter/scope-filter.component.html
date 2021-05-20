@@ -1,0 +1,11 @@
+<div class="filter-box">
+    <div>
+        <select class="form-control" (change)="selectFilter($event.target.value)">
+            <option selected disabled value="">Select Filter</option>
+            <option *ngFor="let scopeName of scopeNameArray" value="{{scopeName}}">{{scopeName}}</option>
+        </select>
+    </div>
+    <div *ngIf="(service.isLoadData | async)">
+        <app-loading></app-loading>
+    </div>
+</div>
