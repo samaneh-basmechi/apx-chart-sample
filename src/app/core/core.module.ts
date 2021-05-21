@@ -6,14 +6,14 @@ import { LoadingComponent } from './header/scope-filter/loading/loading.componen
 import { ScopeFilterComponent } from './header/scope-filter/scope-filter.component';
 @NgModule({
   declarations: [
-    HeaderComponent , 
-    LoadingComponent, 
+    HeaderComponent ,
+    LoadingComponent,
     ScopeFilterComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
     ],
-  exports:[HeaderComponent]
+  exports: [HeaderComponent]
 })
 export class CoreModule { }

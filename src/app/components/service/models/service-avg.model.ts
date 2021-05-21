@@ -1,6 +1,6 @@
 export interface ServiceAvgModel {
-    avg: number,
-    description: string,
-    growth: number,
-    title: string
+    avg: number;
+    description: string;
+    growth: number;
+    title: string;
 }

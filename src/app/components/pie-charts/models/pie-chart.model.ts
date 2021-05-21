@@ -1,4 +1,4 @@
-import { PieChartItem } from "./pie-chart-item.model";
+import { PieChartItem } from './pie-chart-item.model';
 
 export interface PieChartModel {
     chartType: string;

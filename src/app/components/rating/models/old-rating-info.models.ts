@@ -1,8 +1,8 @@
-import { OldRatingItemModel } from "./old-rating-item.model";
+import { OldRatingItemModel } from './old-rating-item.model';
 
 export interface OldRatingModel {
-    avg: number,
-    description: string,
-    items: OldRatingItemModel
-    title: string
+    avg: number;
+    description: string;
+    items: OldRatingItemModel;
+    title: string;
 }

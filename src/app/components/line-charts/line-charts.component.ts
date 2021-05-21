@@ -17,12 +17,12 @@ import { LineChartModel } from './models/line-chart.model';
 export class LineChartsComponent implements OnInit , OnDestroy {
   private lineChartsArray: LineChartModel[];
   public charts: Array<Partial<ChartOptions>> = [];
-  private lineChartStatus$:Subscription;
+  private lineChartStatus$: Subscription;
 
 
   constructor(private store: Store<{ DashboardState: { lineCharts: Array<LineChartModel[]> } }>) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.selectChartArray();
   }
 
@@ -53,7 +53,7 @@ export class LineChartsComponent implements OnInit , OnDestroy {
   private fillChartsArray() {
     this.lineChartsArray.map((lineChart, index) => {
       this.charts[index].title.text = lineChart.title;
-      this.charts[index].series = this.createChartSeries(lineChart)
+      this.charts[index].series = this.createChartSeries(lineChart);
       this.charts[index].xaxis.categories = this.createChartCategories(lineChart);
     });
   }
@@ -86,7 +86,7 @@ export class LineChartsComponent implements OnInit , OnDestroy {
     lineChart.items.map((item: LineChartItem) => {
       item.value.map((object: LineChartItemValue) => {
         for (let index = 0; index < series.length; index++) {
-          if (series[index].name == object.key) {
+          if (series[index].name === object.key) {
             series[index].data.push(object.value);
           }
         }
@@ -95,7 +95,7 @@ export class LineChartsComponent implements OnInit , OnDestroy {
     return series;
   }
 
-  ngOnDestroy(){
+  ngOnDestroy(): void{
     this.lineChartStatus$.unsubscribe();
   }
 

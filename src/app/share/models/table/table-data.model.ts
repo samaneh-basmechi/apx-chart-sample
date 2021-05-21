@@ -1,4 +1,4 @@
-export interface tableDataModel {
+export interface TableDataModel {
     title: string;
-    items: Array<any>
+    items: Array<any>;
 }

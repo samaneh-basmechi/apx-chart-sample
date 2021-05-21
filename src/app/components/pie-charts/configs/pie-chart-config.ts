@@ -1,12 +1,12 @@
-import { ChartOptions } from "../models/pie-chart-config.model";
+import { ChartOptions } from '../models/pie-chart-config.model';
 
 export class PieChartconfig {
 
   public chartOptions: Partial<ChartOptions> = {
     series: [],
     chart: {
-      width: "100%",
-      type: "pie",
+      width: '100%',
+      type: 'pie',
       zoom: {
         enabled: true,
         autoScaleYaxis: true
@@ -21,17 +21,17 @@ export class PieChartconfig {
     labels: []
     ,
     title: {
-      text: "",
-      align: "center",
+      text: '',
+      align: 'center',
       style: {
-        fontFamily: "roboto"
+        fontFamily: 'roboto'
       }
     },
     legend: {
       show: false,
-      position: "bottom",
-      horizontalAlign: "center",
-      fontFamily: "roboto"
+      position: 'bottom',
+      horizontalAlign: 'center',
+      fontFamily: 'roboto'
     },
     responsive: [
       {
@@ -41,7 +41,7 @@ export class PieChartconfig {
             width: 300
           },
           legend: {
-            position: "bottom"
+            position: 'bottom'
           }
         }
       }

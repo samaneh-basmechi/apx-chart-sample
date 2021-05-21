@@ -15,7 +15,7 @@ import { JobTotalModel } from './models/job-total.model';
 export class JobComponent implements OnInit , OnDestroy {
 
   public jobData: JobDataModel;
-  private jobStatus$:Subscription;
+  private jobStatus$: Subscription;
 
   constructor(private store: Store<{ DashboardState: DashboardDataModel }>) { }
 
@@ -34,18 +34,18 @@ export class JobComponent implements OnInit , OnDestroy {
       });
   }
 
-  private createNewTableDataModel(job: JobModel) {
+  private createNewTableDataModel(job: JobModel): void {
     const items: Array<JobAvgModel> = [];
-    job.items.map((item) => { if (item.avg) items.push(item as JobAvgModel) });
-    const description: JobTotalModel = job.items.map((item) => { return item.total && (item as JobTotalModel) })[0];
+    job.items.map((item) => { if (item.avg) { items.push(item as JobAvgModel); } });
+    const description: JobTotalModel = job.items.map((item) => item.total && (item as JobTotalModel))[0];
     this.jobData = {
-      items: items,
+      items,
       title: job.title,
-      description: description
+      description
     };
   }
 
-  ngOnDestroy(){
+  ngOnDestroy(): void{
     this.jobStatus$.unsubscribe();
   }
 

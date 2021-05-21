@@ -13,8 +13,8 @@ export class StarComponent implements OnInit {
 
   constructor(private store: Store<{ DashboardState: { rating: OldRatingModel } }>) { }
 
-  ngOnInit() {
-    this.starNumber = this.store.select('DashboardState').pipe(map(result => { return result.rating.avg }))
+  ngOnInit(): void {
+    this.starNumber = this.store.select('DashboardState').pipe(map(result => result.rating.avg));
   }
 
 }

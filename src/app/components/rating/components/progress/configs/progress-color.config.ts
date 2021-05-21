@@ -1,6 +1,6 @@
-import { RateSatusModel } from "../../../models/rate-satus.model";
+import { RateSatusModel } from '../../../models/rate-satus.model';
 export class ProgressColorConfig{
-    public progressColors:RateSatusModel = {
+    public progressColors: RateSatusModel = {
         Bad: {
           bgColor: `rgba( ${255 + ', ' + 0 + ', ' + 0} , 0.2)`,
           borderColor: `rgba( ${255 + ', ' + 0 + ', ' + 0} , 0.8)`,

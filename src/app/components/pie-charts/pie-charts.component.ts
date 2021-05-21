@@ -15,15 +15,15 @@ import { Subscription } from 'rxjs';
 export class PieChartsComponent implements OnInit , OnDestroy {
   private pieChartsArray: PieChartModel[];
   public charts: Array<Partial<ChartOptions>> = [];
-  private pieChartStatus$:Subscription;
+  private pieChartStatus$: Subscription;
 
   constructor(private store: Store<{ DashboardState: { pieCharts: PieChartModel[] } }>) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.selectChartArray();
   }
 
-  private selectChartArray() {
+  private selectChartArray(): void {
     this.store.select('DashboardState').pipe(
       map(result => {
         return result.pieCharts;
@@ -37,7 +37,7 @@ export class PieChartsComponent implements OnInit , OnDestroy {
       });
   }
 
-  private createOptionArray(length: number) {
+  private createOptionArray(length: number): void {
     const chartOptions: Partial<ChartOptions> = new PieChartconfig().chartOptions;
     for (let index = 0; index < length; index++) {
       this.charts.push(Object.assign({}, { ...chartOptions }));
@@ -45,17 +45,17 @@ export class PieChartsComponent implements OnInit , OnDestroy {
     this.fillChartsArray();
   }
 
-  private fillChartsArray() {
+  private fillChartsArray(): void {
     this.pieChartsArray.map((pieChart: PieChartModel, index: number) => {
       this.charts[index].title = { ...this.charts[index].title, text: pieChart.title };
       const chartData = this.getChartData(pieChart);
       this.charts[index].labels = chartData.labels;
       this.charts[index].series = chartData.series;
     });
-  };
+  }
 
-  private getChartData(chart: PieChartModel) {
-    let chartOpetions: Partial<ChartOptions> = { labels: [], series: [] };
+  private getChartData(chart: PieChartModel): Partial<ChartOptions> {
+    const chartOpetions: Partial<ChartOptions> = { labels: [], series: [] };
     chart.items.map((item: PieChartItem) => {
       chartOpetions.labels.push(item.key);
       chartOpetions.series.push(item.value);
@@ -63,7 +63,7 @@ export class PieChartsComponent implements OnInit , OnDestroy {
     return chartOpetions;
   }
 
-  ngOnDestroy(){
+  ngOnDestroy(): void{
     this. pieChartStatus$.unsubscribe();
   }
 }

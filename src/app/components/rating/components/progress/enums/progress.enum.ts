@@ -1,4 +1,3 @@
-
 export enum RateSatusEnum {
     'Bad' = 1,
     'Weak' = 2,

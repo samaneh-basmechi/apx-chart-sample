@@ -18,11 +18,11 @@ export class MockService {
   public getmock(scopeFilterName?) {
     return this.http.get(`${environment.baseUrl}${scopeFilterName ? `?scop=${scopeFilterName}` : ''}`)
       .pipe(
-        map((result:any) => {return result.response.data.analytics as DashboardDataModel}),
+        map((result: any) => result.response.data.analytics as DashboardDataModel),
         tap(() => { },
           (err: any) => {
             if (err instanceof HttpErrorResponse) {
-              alert(err.status + ' ' + 'Error occurred')
+              alert(err.status + ' ' + 'Error occurred');
             }
           })
       );

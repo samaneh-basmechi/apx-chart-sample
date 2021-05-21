@@ -21,7 +21,7 @@ export class ServiceComponent implements OnInit {
     this.getTableData();
   }
 
-  private getTableData() {
+  private getTableData(): void {
     this.store.select('DashboardState')
       .pipe(
         map((dashboardDataArray: DashboardDataModel) => {
@@ -32,14 +32,14 @@ export class ServiceComponent implements OnInit {
       });
   }
 
-  private createNewTableDataModel(service: ServiceModel) {
+  private createNewTableDataModel(service: ServiceModel): void {
     const items: Array<ServiceTotalModel> = [];
-    service.items.map((item) => { if (item.total) items.push(item as ServiceTotalModel) });
-    const description: ServiceAvgModel = service.items.map((item) => { return item.total && (item as ServiceAvgModel) })[0];
+    service.items.map((item) => { if (item.total) { items.push(item as ServiceTotalModel); } });
+    const description: ServiceAvgModel = service.items.map((item) => item.total && (item as ServiceAvgModel))[0];
     this.serviceData = {
-      items: items,
+      items,
       title: service.title,
-      description: description
+      description
     };
   }
 }

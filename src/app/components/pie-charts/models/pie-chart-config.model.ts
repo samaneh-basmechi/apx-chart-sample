@@ -1,4 +1,4 @@
-import { ApexNonAxisChartSeries, ApexChart, ApexResponsive, ApexTheme, ApexTitleSubtitle, ApexLegend, ApexDataLabels } from "ng-apexcharts";
+import { ApexNonAxisChartSeries, ApexChart, ApexResponsive, ApexTheme, ApexTitleSubtitle, ApexLegend, ApexDataLabels } from 'ng-apexcharts';
 
 export interface ChartOptions {
     series: Partial<ApexNonAxisChartSeries>;
@@ -9,4 +9,4 @@ export interface ChartOptions {
     title: ApexTitleSubtitle;
     legend: ApexLegend;
     dataLabels: ApexDataLabels;
-  };
+  }
