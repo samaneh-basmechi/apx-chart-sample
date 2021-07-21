@@ -5,7 +5,7 @@
 ![til](./src/assets/images/Demo.png)
 
 ## Demo Link
-https://sb-front-end-challenge.netlify.app
+https://apx-chart-sample.netlify.app
 
 ## Usage
 
@@ -21,7 +21,7 @@ https://sb-front-end-challenge.netlify.app
     json-server --watch db.json
     ```
 
-- start the project
+- Start the project
 
     ```bash
     ng serve
