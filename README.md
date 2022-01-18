@@ -1,4 +1,4 @@
-# Apx-Chart Sample
+# Apx-Chart Sample (Angular)
 
 ## Demo
 
