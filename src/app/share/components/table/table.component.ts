@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { tableDataModel } from '../../models/table/table-data.model';
+import { TableDataModel } from '../../models/table/table-data.model';
 
 @Component({
   selector: 'app-table',
@@ -7,6 +7,6 @@ import { tableDataModel } from '../../models/table/table-data.model';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent {
-  @Input() tableData: tableDataModel;
+  @Input() tableData: TableDataModel;
 
 }

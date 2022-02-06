@@ -1,7 +1,7 @@
-import { jobItemModel } from './job-item.model';
+import { JobItemModel } from './job-item.model';
 
 export interface JobModel{
     description: string;
-    items: Array<jobItemModel>;
+    items: Array<JobItemModel>;
     title: string;
 }
