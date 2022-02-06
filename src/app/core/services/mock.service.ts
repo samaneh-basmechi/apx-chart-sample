@@ -16,7 +16,7 @@ export class MockService {
   constructor(private http: HttpClient) { }
 
   public getmock(scopeFilterName?) {
-    return this.http.get(`${environment.baseUrl}${scopeFilterName ? `?scop=${scopeFilterName}` : ''}`)
+    return this.http.get(`https://skyrim.whipmobility.io/v10/analytic/dashboard/operation/mock${scopeFilterName ? `?scop=${scopeFilterName}` : ''}`)
       .pipe(
         map((result: any) => result.response.data.analytics as DashboardDataModel),
         tap(() => { },
